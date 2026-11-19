@@ -6,7 +6,7 @@
    Ejemplo:
    const API_URL = "https://script.google.com/macros/s/AKfy..../exec";
 */
-const API_URL = "PEGA_AQUI_LA_URL_DE_TU_APPS_SCRIPT";
+const API_URL = "https://script.google.com/macros/s/AKfycbwo_OR2rjBm3293Nz-DW9s3fw_TSJSMiQ9y-Sl4PfIkYf3mlW-AGzMzWiyoEiAL_xGBjQ/exec";
 
 /* =====================================================================
    Lógica de la página de agendamiento
