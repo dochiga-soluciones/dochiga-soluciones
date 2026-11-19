@@ -32,8 +32,9 @@ Dos integraciones requieren tus credenciales. Ver **`CONFIGURACION.md`** para el
 ├── css/estilos.css
 ├── js/
 │   ├── animaciones.js   # animaciones y menú móvil
-│   ├── agenda.js        # lógica de agendamiento (requiere URL Apps Script)
-│   └── donacion.js      # donación ePayco (requiere PUBLIC_KEY)
+│   ├── agenda.js        # agendamiento + pop-up de donación (requiere URL Apps Script)
+│   ├── epayco-config.js # configuración ePayco compartida (requiere PUBLIC_KEY)
+│   └── donacion.js      # donación en la página Tienda
 ├── apps-script/
 │   └── Codigo.gs        # backend de calendario (desplegar en script.google.com)
 ├── CONFIGURACION.md     # guía de configuración
