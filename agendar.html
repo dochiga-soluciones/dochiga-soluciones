@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendar | Dochiga Soluciones</title>
+<meta name="description" content="Agenda una capacitación, una automatización o una reunión de proyecto BI según la disponibilidad real de nuestro calendario.">
+<link rel="stylesheet" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <div class="brand">Do<span>chiga</span></div>
+        <button class="nav-toggle" aria-label="Menú">☰</button>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="agendar.html" class="cta">Agendar</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero" style="padding-bottom:30px;">
+    <div class="container">
+        <span class="eyebrow">Reserva en línea</span>
+        <h1>Agenda tu <span class="accent">cita</span></h1>
+        <p>Elige el tipo de sesión, selecciona un horario disponible de nuestro calendario real y confirma. Recibirás la invitación por correo.</p>
+    </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+    <div class="container">
+        <div class="form-wrap">
+            <div id="alert" class="alert"></div>
+
+            <form id="agendaForm">
+                <div class="form-group">
+                    <label for="tipo">Tipo de cita *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona una opción…</option>
+                        <option value="Capacitación Power BI / Excel">Capacitación Power BI / Excel</option>
+                        <option value="Proyecto de automatización">Proyecto de automatización</option>
+                        <option value="Reunión de proyecto BI">Reunión de proyecto BI</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="temaGroup">
+                    <label for="tema">Tema / detalle</label>
+                    <input type="text" id="tema" name="tema" placeholder="Ej: Power BI Avanzado, automatizar reportes, etc.">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="3186413008">
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa (opcional)</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Selecciona una fecha *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <p class="form-note">Mostramos horarios según la disponibilidad real del calendario.</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Horarios disponibles *</label>
+                    <div id="slots" class="slots">
+                        <p class="form-note">Elige primero una fecha para ver los horarios.</p>
+                    </div>
+                    <input type="hidden" id="hora" name="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos brevemente qué necesitas."></textarea>
+                </div>
+
+                <button type="submit" class="btn" id="submitBtn" style="width:100%;">Confirmar agendamiento</button>
+                <p class="form-note" style="text-align:center;margin-top:14px;">
+                    ¿Prefieres hablar primero? <a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="accent">Escríbenos por WhatsApp</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>Do<span class="accent">chiga</span> Soluciones</h4>
+                <p>Datos en decisiones estratégicas.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <a href="capacitaciones.html">Capacitaciones</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="agendar.html">Agendar</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <a href="tel:573186413008">📞 318 641 3008</a>
+                <a href="mailto:dochigasoluciones@gmail.com">📧 dochigasoluciones@gmail.com</a>
+                <a href="https://wa.me/573186413008" target="_blank" rel="noopener">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Dochiga Soluciones. Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">💬</a>
+<script src="js/animaciones.js"></script>
+<script src="js/agenda.js"></script>
+</body>
+</html>

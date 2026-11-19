@@ -1,46 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Servicios</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios | Dochiga Soluciones</title>
+<meta name="description" content="Capacitaciones, automatización de procesos, dashboards Power BI y análisis estratégico de datos.">
 <link rel="stylesheet" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-    <h2>Dochiga</h2>
-    <div>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Quiénes Somos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="contacto.html">Contacto</a>
+    <div class="nav-inner">
+        <div class="brand">Do<span>chiga</span></div>
+        <button class="nav-toggle" aria-label="Menú">☰</button>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="agendar.html" class="cta">Agendar</a>
+        </div>
     </div>
 </nav>
 
-<section class="section">
-    <h1>Nuestros Servicios</h1>
-    <div class="cards">
-        <div class="card">
-            <h3>Automatización</h3>
-            <p>Optimización de procesos empresariales.</p>
-        </div>
-        <div class="card">
-            <h3>Power BI</h3>
-            <p>Dashboards ejecutivos personalizados.</p>
-        </div>
-        <div class="card">
-            <h3>Análisis Estratégico</h3>
-            <p>Información clara para decisiones rentables.</p>
+<section class="hero" style="padding-bottom:30px;">
+    <div class="container">
+        <span class="eyebrow">Qué ofrecemos</span>
+        <h1>Nuestros <span class="accent">Servicios</span></h1>
+        <p>Formación, automatización y Business Intelligence para convertir tus datos en resultados.</p>
+    </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Capacitaciones</h3>
+                <p>Power BI y Excel en todos los niveles, con casos reales y material práctico.</p>
+                <div class="card-foot"><a href="capacitaciones.html" class="btn btn-outline">Ver cursos</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Automatización</h3>
+                <p>Optimización de procesos empresariales y eliminación de tareas repetitivas.</p>
+                <div class="card-foot"><a href="agendar.html?tipo=automatizacion" class="btn btn-outline">Agendar</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">📈</div>
+                <h3>Dashboards Power BI</h3>
+                <p>Tableros ejecutivos personalizados para monitorear tu negocio en tiempo real.</p>
+                <div class="card-foot"><a href="agendar.html?tipo=proyecto-bi" class="btn btn-outline">Agendar</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h3>Análisis Estratégico</h3>
+                <p>Información clara y accionable para decisiones rentables basadas en datos.</p>
+                <div class="card-foot"><a href="agendar.html?tipo=proyecto-bi" class="btn btn-outline">Agendar</a></div>
+            </div>
         </div>
     </div>
 </section>
 
+<section class="cta-band">
+    <div class="container">
+        <h2>¿Hablamos de tu proyecto?</h2>
+        <p>Agenda una reunión y diseñamos juntos la mejor solución para tu empresa.</p>
+        <a href="agendar.html" class="btn">Agendar reunión</a>
+    </div>
+</section>
+
 <footer>
-    © 2026 Dochiga Soluciones
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>Do<span class="accent">chiga</span> Soluciones</h4>
+                <p>Datos en decisiones estratégicas.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <a href="capacitaciones.html">Capacitaciones</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="agendar.html">Agendar</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <a href="tel:573186413008">📞 318 641 3008</a>
+                <a href="mailto:dochigasoluciones@gmail.com">📧 dochigasoluciones@gmail.com</a>
+                <a href="https://wa.me/573186413008" target="_blank" rel="noopener">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Dochiga Soluciones. Todos los derechos reservados.</div>
+    </div>
 </footer>
 
-<a href="https://wa.me/573186413008" target="_blank" class="whatsapp">💬</a>
+<a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">💬</a>
 <script src="js/animaciones.js"></script>
 </body>
 </html>
