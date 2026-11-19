@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" font-family="Poppins, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1a30"/>
+      <stop offset="1" stop-color="#0a0f1e"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="440" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="638" height="438" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- top bar -->
+  <circle cx="26" cy="26" r="5" fill="#ff5f57"/>
+  <circle cx="44" cy="26" r="5" fill="#febc2e"/>
+  <circle cx="62" cy="26" r="5" fill="#28c840"/>
+  <text x="300" y="30" fill="#9aa7bd" font-size="12">Dashboard · Dochiga BI</text>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="24"  y="56" width="138" height="72" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="40" y="82" fill="#9aa7bd" font-size="11">Ventas</text>
+    <text x="40" y="108" fill="#facc15" font-size="22" font-weight="700">$ 1.2M</text>
+  </g>
+  <g>
+    <rect x="176" y="56" width="138" height="72" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="192" y="82" fill="#9aa7bd" font-size="11">Clientes</text>
+    <text x="192" y="108" fill="#22d3ee" font-size="22" font-weight="700">3.480</text>
+  </g>
+  <g>
+    <rect x="328" y="56" width="138" height="72" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="344" y="82" fill="#9aa7bd" font-size="11">Margen</text>
+    <text x="344" y="108" fill="#c4b5fd" font-size="22" font-weight="700">38%</text>
+  </g>
+  <g>
+    <rect x="480" y="56" width="136" height="72" rx="12" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="496" y="82" fill="#9aa7bd" font-size="11">Crecimiento</text>
+    <text x="496" y="108" fill="#86efac" font-size="22" font-weight="700">+12%</text>
+  </g>
+
+  <!-- bar chart -->
+  <rect x="24" y="148" width="360" height="268" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="44" y="176" fill="#f1f5f9" font-size="13" font-weight="600">Ventas por mes</text>
+  <g>
+    <rect x="52"  y="300" width="34" height="88"  rx="6" fill="url(#bar)"/>
+    <rect x="100" y="270" width="34" height="118" rx="6" fill="url(#bar)"/>
+    <rect x="148" y="240" width="34" height="148" rx="6" fill="url(#bar)"/>
+    <rect x="196" y="285" width="34" height="103" rx="6" fill="url(#bar)"/>
+    <rect x="244" y="210" width="34" height="178" rx="6" fill="url(#bar)"/>
+    <rect x="292" y="190" width="34" height="198" rx="6" fill="url(#bar)"/>
+  </g>
+
+  <!-- area chart -->
+  <rect x="400" y="148" width="216" height="130" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="420" y="176" fill="#f1f5f9" font-size="13" font-weight="600">Tendencia</text>
+  <path d="M416 252 L452 232 L488 240 L524 212 L560 220 L596 196 L596 264 L416 264 Z" fill="url(#area)"/>
+  <path d="M416 252 L452 232 L488 240 L524 212 L560 220 L596 196" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+
+  <!-- donut -->
+  <rect x="400" y="290" width="216" height="126" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <circle cx="460" cy="353" r="34" fill="none" stroke="#1f2937" stroke-width="12"/>
+  <circle cx="460" cy="353" r="34" fill="none" stroke="#facc15" stroke-width="12" stroke-dasharray="150 214" stroke-linecap="round" transform="rotate(-90 460 353)"/>
+  <text x="446" y="358" fill="#f1f5f9" font-size="16" font-weight="700">70%</text>
+  <g font-size="11" fill="#9aa7bd">
+    <circle cx="520" cy="338" r="4" fill="#facc15"/><text x="532" y="342">Meta</text>
+    <circle cx="520" cy="360" r="4" fill="#7c3aed"/><text x="532" y="364">Real</text>
+    <circle cx="520" cy="382" r="4" fill="#22d3ee"/><text x="532" y="386">Proy.</text>
+  </g>
+</svg>
