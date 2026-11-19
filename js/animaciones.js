@@ -1,23 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const elements = document.querySelectorAll(".card, .section h1, .hero h1, .hero p");
-
+    /* ---- Animación al hacer scroll ---- */
+    const revealEls = document.querySelectorAll(".reveal, .card, .step, .section-head");
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
             }
         });
-    }, {
-        threshold: 0.2
-    });
+    }, { threshold: 0.15 });
 
-    elements.forEach(el => {
-        el.style.opacity = "0";
-        el.style.transform = "translateY(40px)";
-        el.style.transition = "all 0.8s ease";
+    revealEls.forEach(el => {
+        el.classList.add("reveal");
         observer.observe(el);
     });
 
+    /* ---- Menú móvil ---- */
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector("nav .links");
+    if (toggle && links) {
+        toggle.addEventListener("click", () => links.classList.toggle("open"));
+        links.querySelectorAll("a").forEach(a =>
+            a.addEventListener("click", () => links.classList.remove("open"))
+        );
+    }
+
+    /* ---- Marcar enlace activo ---- */
+    const path = location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("nav .links a").forEach(a => {
+        if (a.getAttribute("href") === path) a.classList.add("active");
+    });
 });

@@ -2,35 +2,144 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Dochiga Soluciones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dochiga Soluciones | Capacitaciones Power BI, Excel y Automatización</title>
+<meta name="description" content="Capacitaciones de Power BI y Excel, automatización de procesos y proyectos de Business Intelligence. Agenda tu capacitación o reunión con Dochiga Soluciones.">
 <link rel="stylesheet" href="css/estilos.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <nav>
-    <h2>Dochiga</h2>
-    <div>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Quiénes Somos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="contacto.html">Contacto</a>
+    <div class="nav-inner">
+        <div class="brand">Do<span>chiga</span></div>
+        <button class="nav-toggle" aria-label="Menú">☰</button>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="agendar.html" class="cta">Agendar</a>
+        </div>
     </div>
 </nav>
 
 <section class="hero">
-    <h1>Transformamos Datos en Decisiones Estratégicas</h1>
-    <p>Automatización, Power BI y análisis empresarial avanzado.</p>
-    <a href="contacto.html" class="btn">Solicitar Consultoría</a>
+    <div class="container">
+        <span class="eyebrow">Power BI · Excel · Automatización · BI</span>
+        <h1>Transformamos Datos en <span class="accent">Decisiones Estratégicas</span></h1>
+        <p>Capacitaciones especializadas en Power BI y Excel, automatización de procesos y proyectos de Business Intelligence para que tu empresa decida con datos reales.</p>
+        <div class="hero-btns">
+            <a href="capacitaciones.html" class="btn">Ver Capacitaciones</a>
+            <a href="agendar.html" class="btn btn-outline">Agendar una reunión</a>
+        </div>
+    </div>
+</section>
+
+<!-- Destacados -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Lo que hacemos</span>
+            <h2>Formación y soluciones de datos</h2>
+            <p>Desde capacitar a tu equipo hasta implementar soluciones completas de automatización y analítica.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Capacitación Power BI</h3>
+                <p>Aprende a construir dashboards profesionales, modelado de datos y DAX desde cero hasta nivel avanzado.</p>
+                <div class="card-foot"><a href="capacitaciones.html" class="btn btn-outline">Ver cursos</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">📈</div>
+                <h3>Capacitación Excel</h3>
+                <p>Domina fórmulas, tablas dinámicas, Power Query y automatización para potenciar tu productividad.</p>
+                <div class="card-foot"><a href="capacitaciones.html" class="btn btn-outline">Ver cursos</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Automatización</h3>
+                <p>Optimizamos procesos repetitivos con Power Automate, Apps Script y flujos a medida.</p>
+                <div class="card-foot"><a href="agendar.html" class="btn btn-outline">Agendar</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h3>Proyectos de BI</h3>
+                <p>Diseñamos e implementamos soluciones de Business Intelligence end-to-end para tu organización.</p>
+                <div class="card-foot"><a href="agendar.html" class="btn btn-outline">Agendar</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cómo funciona -->
+<section class="section bg-alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Fácil y rápido</span>
+            <h2>Agenda en 3 pasos</h2>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="num">1</div>
+                <h3>Elige el tipo de cita</h3>
+                <p>Capacitación, automatización o proyecto de BI.</p>
+            </div>
+            <div class="step">
+                <div class="num">2</div>
+                <h3>Selecciona día y hora</h3>
+                <p>Verás horarios disponibles tomados de nuestro calendario real.</p>
+            </div>
+            <div class="step">
+                <div class="num">3</div>
+                <h3>Confirma</h3>
+                <p>Recibirás la invitación con el enlace de la reunión por correo.</p>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:40px;">
+            <a href="agendar.html" class="btn">Agendar ahora</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA donación -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Apoya nuestras capacitaciones</h2>
+        <p>Nuestras capacitaciones abiertas funcionan con aportes voluntarios. Si te aportaron valor, puedes donar el monto que desees.</p>
+        <a href="tienda.html" class="btn">Hacer una donación</a>
+    </div>
 </section>
 
 <footer>
-    © 2026 Dochiga Soluciones
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>Do<span class="accent">chiga</span> Soluciones</h4>
+                <p>Datos en decisiones estratégicas.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <a href="capacitaciones.html">Capacitaciones</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="agendar.html">Agendar</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <a href="tel:573186413008">📞 318 641 3008</a>
+                <a href="mailto:dochigasoluciones@gmail.com">📧 dochigasoluciones@gmail.com</a>
+                <a href="https://wa.me/573186413008" target="_blank" rel="noopener">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Dochiga Soluciones. Todos los derechos reservados.</div>
+    </div>
 </footer>
 
-<a href="https://wa.me/573186413008" target="_blank" class="whatsapp">💬</a>
+<a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">💬</a>
 <script src="js/animaciones.js"></script>
 </body>
 </html>

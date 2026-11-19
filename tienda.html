@@ -1,49 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Tienda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda y Donaciones | Dochiga Soluciones</title>
+<meta name="description" content="Apoya las capacitaciones con una donación voluntaria vía ePayco y agenda proyectos de automatización y Business Intelligence.">
 <link rel="stylesheet" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-    <h2>Dochiga</h2>
-    <div>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Quiénes Somos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="contacto.html">Contacto</a>
+    <div class="nav-inner">
+        <div class="brand">Do<span>chiga</span></div>
+        <button class="nav-toggle" aria-label="Menú">☰</button>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="agendar.html" class="cta">Agendar</a>
+        </div>
     </div>
 </nav>
 
-<section class="section">
-    <h1>Planes de Servicios</h1>
-    <div class="cards">
-        <div class="card">
-            <h3>Plan Básico</h3>
-            <p>Dashboard simple Power BI</p>
-            <a href="contacto.html" class="btn">Cotizar</a>
+<section class="hero" style="padding-bottom:30px;">
+    <div class="container">
+        <span class="eyebrow">Tienda</span>
+        <h1>Capacitaciones, proyectos y <span class="accent">donaciones</span></h1>
+        <p>Nuestras capacitaciones funcionan con aportes voluntarios. Los proyectos de automatización y BI se cotizan tras una reunión.</p>
+    </div>
+</section>
+
+<!-- Donación capacitaciones -->
+<section class="section" style="padding-top:20px;">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Aporte voluntario</span>
+            <h2>Apoya las capacitaciones</h2>
+            <p>Escribe el monto que desees aportar. El pago se procesa de forma segura con ePayco.</p>
         </div>
-        <div class="card">
-            <h3>Plan Profesional</h3>
-            <p>Automatización + Dashboards</p>
-            <a href="contacto.html" class="btn">Cotizar</a>
+
+        <div class="donate-box">
+            <div class="icon" style="font-size:44px;">💛</div>
+            <h3>Donación para capacitaciones</h3>
+            <p style="color:var(--muted); margin:10px 0 0;">Tú defines el valor de tu aporte (COP).</p>
+
+            <div class="amount-presets">
+                <button type="button" data-amount="20000">$20.000</button>
+                <button type="button" data-amount="50000">$50.000</button>
+                <button type="button" data-amount="100000">$100.000</button>
+            </div>
+
+            <div class="form-group">
+                <label for="monto">Monto a donar (COP) *</label>
+                <input type="number" id="monto" min="1000" step="1000" placeholder="Ej: 50000">
+            </div>
+
+            <div id="donAlert" class="alert"></div>
+
+            <button type="button" class="btn" id="donarBtn" style="width:100%;">Donar con ePayco</button>
+            <p class="form-note" style="margin-top:12px;">Pago seguro procesado por ePayco. Serás redirigido a la pasarela.</p>
         </div>
-        <div class="card">
-            <h3>Plan Empresarial</h3>
-            <p>Solución integral estratégica</p>
-            <a href="contacto.html" class="btn">Cotizar</a>
+    </div>
+</section>
+
+<!-- Proyectos (agendar para cotizar) -->
+<section class="section bg-alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Servicios cotizables</span>
+            <h2>Automatización y proyectos de BI</h2>
+            <p>Estos servicios se cotizan según el alcance. Agenda una reunión y te damos una propuesta.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <span class="badge">Automatización</span>
+                <h3>Automatización de procesos</h3>
+                <p>Eliminamos tareas repetitivas con flujos automáticos a la medida.</p>
+                <ul>
+                    <li>Power Automate / Apps Script</li>
+                    <li>Reportes automáticos</li>
+                    <li>Integración entre sistemas</li>
+                </ul>
+                <div class="card-foot"><a href="agendar.html?tipo=automatizacion" class="btn">Agendar reunión</a></div>
+            </div>
+            <div class="card">
+                <span class="badge">Business Intelligence</span>
+                <h3>Proyecto Power BI</h3>
+                <p>Solución de BI end-to-end: modelo, dashboards y gobierno de datos.</p>
+                <ul>
+                    <li>Modelo de datos y ETL</li>
+                    <li>Dashboards ejecutivos</li>
+                    <li>Publicación y capacitación</li>
+                </ul>
+                <div class="card-foot"><a href="agendar.html?tipo=proyecto-bi" class="btn">Agendar reunión</a></div>
+            </div>
+            <div class="card">
+                <span class="badge">Empresas</span>
+                <h3>Solución integral</h3>
+                <p>Acompañamiento completo: datos, automatización y formación del equipo.</p>
+                <ul>
+                    <li>Diagnóstico de datos</li>
+                    <li>Implementación a medida</li>
+                    <li>Soporte y capacitación</li>
+                </ul>
+                <div class="card-foot"><a href="agendar.html?tipo=proyecto-bi" class="btn">Agendar reunión</a></div>
+            </div>
         </div>
     </div>
 </section>
 
 <footer>
-    © 2026 Dochiga Soluciones
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>Do<span class="accent">chiga</span> Soluciones</h4>
+                <p>Datos en decisiones estratégicas.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <a href="capacitaciones.html">Capacitaciones</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="agendar.html">Agendar</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <a href="tel:573186413008">📞 318 641 3008</a>
+                <a href="mailto:dochigasoluciones@gmail.com">📧 dochigasoluciones@gmail.com</a>
+                <a href="https://wa.me/573186413008" target="_blank" rel="noopener">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Dochiga Soluciones. Todos los derechos reservados.</div>
+    </div>
 </footer>
 
-<a href="https://wa.me/573186413008" target="_blank" class="whatsapp">💬</a>
+<a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">💬</a>
+
+<!-- Checkout de ePayco -->
+<script src="https://checkout.epayco.co/checkout.js"></script>
 <script src="js/animaciones.js"></script>
+<script src="js/donacion.js"></script>
 </body>
 </html>

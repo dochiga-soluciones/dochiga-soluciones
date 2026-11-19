@@ -1,34 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Contacto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Dochiga Soluciones</title>
+<meta name="description" content="Contacta a Dochiga Soluciones: teléfono, correo y WhatsApp. O agenda directamente una reunión.">
 <link rel="stylesheet" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-    <h2>Dochiga</h2>
-    <div>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Quiénes Somos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="contacto.html">Contacto</a>
+    <div class="nav-inner">
+        <div class="brand">Do<span>chiga</span></div>
+        <button class="nav-toggle" aria-label="Menú">☰</button>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="agendar.html" class="cta">Agendar</a>
+        </div>
     </div>
 </nav>
 
-<section class="section">
-    <h1>Contacto</h1>
-    <p>📞 318 641 3008</p>
-    <p>📧 dochigasoluciones@gmail.com</p>
+<section class="hero" style="padding-bottom:30px;">
+    <div class="container">
+        <span class="eyebrow">Hablemos</span>
+        <h1><span class="accent">Contáctanos</span></h1>
+        <p>Estamos para ayudarte con tu capacitación o proyecto. Elige el canal que prefieras.</p>
+    </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <div class="icon">📞</div>
+                <h3>Teléfono</h3>
+                <p>Llámanos en horario de atención.</p>
+                <div class="card-foot"><a href="tel:573186413008" class="btn btn-outline">318 641 3008</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">📧</div>
+                <h3>Correo</h3>
+                <p>Escríbenos y te respondemos pronto.</p>
+                <div class="card-foot"><a href="mailto:dochigasoluciones@gmail.com" class="btn btn-outline">Enviar correo</a></div>
+            </div>
+            <div class="card">
+                <div class="icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p>La forma más rápida de contactarnos.</p>
+                <div class="card-foot"><a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="btn btn-outline">Abrir WhatsApp</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <h2>¿Prefieres agendar directamente?</h2>
+        <p>Reserva una capacitación o reunión según nuestra disponibilidad real.</p>
+        <a href="agendar.html" class="btn">Agendar ahora</a>
+    </div>
 </section>
 
 <footer>
-    © 2026 Dochiga Soluciones
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>Do<span class="accent">chiga</span> Soluciones</h4>
+                <p>Datos en decisiones estratégicas.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <a href="capacitaciones.html">Capacitaciones</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="agendar.html">Agendar</a>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <a href="tel:573186413008">📞 318 641 3008</a>
+                <a href="mailto:dochigasoluciones@gmail.com">📧 dochigasoluciones@gmail.com</a>
+                <a href="https://wa.me/573186413008" target="_blank" rel="noopener">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Dochiga Soluciones. Todos los derechos reservados.</div>
+    </div>
 </footer>
 
-<a href="https://wa.me/573186413008" target="_blank" class="whatsapp">💬</a>
+<a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">💬</a>
 <script src="js/animaciones.js"></script>
 </body>
 </html>

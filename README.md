@@ -1,16 +1,47 @@
-## Hi there 👋
+# Dochiga Soluciones
 
-<!--
-**dochiga-soluciones/dochiga-soluciones** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Sitio web de Dochiga Soluciones: capacitaciones de **Power BI** y **Excel**, automatización de procesos y proyectos de **Business Intelligence**, con **agendamiento en línea** conectado a Google Calendar y **donaciones** vía ePayco.
 
-Here are some ideas to get you started:
+Sitio estático publicado en **GitHub Pages**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Páginas
+
+| Página | Archivo | Descripción |
+|--------|---------|-------------|
+| Inicio | `index.html` | Portada y resumen de servicios |
+| Capacitaciones | `capacitaciones.html` | Cursos de Power BI y Excel (por nivel) |
+| Agendar | `agendar.html` | Reserva de citas con disponibilidad real |
+| Servicios | `servicios.html` | Catálogo de servicios |
+| Tienda | `tienda.html` | Donaciones (ePayco) + proyectos cotizables |
+| Nosotros | `nosotros.html` | Quiénes somos |
+| Contacto | `contacto.html` | Canales de contacto |
+
+## Configuración pendiente
+
+Dos integraciones requieren tus credenciales. Ver **`CONFIGURACION.md`** para el paso a paso:
+
+1. **Agendamiento (Google Apps Script)** → pega la URL del Web App en `js/agenda.js`.
+2. **Donaciones (ePayco)** → pega tu `PUBLIC_KEY` en `js/donacion.js`.
+
+## Estructura
+
+```
+.
+├── index.html, capacitaciones.html, agendar.html, servicios.html,
+│   tienda.html, nosotros.html, contacto.html
+├── css/estilos.css
+├── js/
+│   ├── animaciones.js   # animaciones y menú móvil
+│   ├── agenda.js        # lógica de agendamiento (requiere URL Apps Script)
+│   └── donacion.js      # donación ePayco (requiere PUBLIC_KEY)
+├── apps-script/
+│   └── Codigo.gs        # backend de calendario (desplegar en script.google.com)
+├── CONFIGURACION.md     # guía de configuración
+└── README.md
+```
+
+## Contacto
+
+- 📞 318 641 3008
+- 📧 dochigasoluciones@gmail.com
+- 💬 [WhatsApp](https://wa.me/573186413008)
