@@ -6,13 +6,13 @@
 <title>Dochiga Soluciones | Capacitaciones Power BI, Excel y Automatización</title>
 <meta name="description" content="Capacitaciones de Power BI y Excel, automatización de procesos y proyectos de Business Intelligence. Agenda tu capacitación o reunión con Dochiga Soluciones.">
 <link rel="stylesheet" href="css/estilos.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
     <div class="nav-inner">
-        <div class="brand">Do<span>chiga</span></div>
+        <div class="brand"><span class="logo-dot">D</span>Do<span>chiga</span></div>
         <button class="nav-toggle" aria-label="Menú">☰</button>
         <div class="links">
             <a href="index.html">Inicio</a>
@@ -26,19 +26,44 @@
     </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-    <div class="container">
-        <span class="eyebrow">Power BI · Excel · Automatización · BI</span>
-        <h1>Transformamos Datos en <span class="accent">Decisiones Estratégicas</span></h1>
-        <p>Capacitaciones especializadas en Power BI y Excel, automatización de procesos y proyectos de Business Intelligence para que tu empresa decida con datos reales.</p>
-        <div class="hero-btns">
-            <a href="capacitaciones.html" class="btn">Ver Capacitaciones</a>
-            <a href="agendar.html" class="btn btn-outline">Agendar una reunión</a>
+    <div class="blob a"></div>
+    <div class="blob b"></div>
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge"><span class="dot"></span> Especialistas en datos y automatización</span>
+            <h1>Transformamos datos en <span class="gradient-text">decisiones estratégicas</span></h1>
+            <p class="lead">Capacitaciones en Power BI y Excel, automatización de procesos y proyectos de Business Intelligence para que tu empresa decida con datos reales.</p>
+            <div class="hero-btns">
+                <a href="capacitaciones.html" class="btn">📊 Ver capacitaciones</a>
+                <a href="agendar.html" class="btn btn-outline">Agendar reunión</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><b class="gradient-text">+150</b><span>Profesionales capacitados</span></div>
+                <div class="stat"><b class="gradient-text">+40</b><span>Dashboards entregados</span></div>
+                <div class="stat"><b class="gradient-text">100%</b><span>Casos prácticos</span></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="assets/dashboard-hero.svg" alt="Dashboard de Power BI con KPIs, gráficos de ventas y tendencias" loading="eager">
+            <div class="float-card top"><span class="fi">📈</span><div><b>+12%</b><br><span style="color:var(--muted)">Crecimiento</span></div></div>
+            <div class="float-card bottom"><span class="fi">⚡</span><div><b>Automatizado</b><br><span style="color:var(--muted)">Reportes diarios</span></div></div>
         </div>
     </div>
 </section>
 
-<!-- Destacados -->
+<!-- LOGOS / TECH -->
+<div class="logos-strip">
+    <div class="container inner">
+        <span>Tecnologías que dominamos</span>
+        <div class="tech"><img src="assets/powerbi.svg" alt="Power BI"> Power BI</div>
+        <div class="tech"><img src="assets/excel.svg" alt="Excel"> Excel</div>
+        <div class="tech"><img src="assets/automation.svg" alt="Automatización"> Power Automate</div>
+    </div>
+</div>
+
+<!-- SERVICIOS DESTACADOS -->
 <section class="section">
     <div class="container">
         <div class="section-head">
@@ -48,35 +73,75 @@
         </div>
         <div class="cards">
             <div class="card">
-                <div class="icon">📊</div>
+                <div class="icon-box">📊</div>
                 <h3>Capacitación Power BI</h3>
-                <p>Aprende a construir dashboards profesionales, modelado de datos y DAX desde cero hasta nivel avanzado.</p>
+                <p>Dashboards profesionales, modelado de datos y DAX desde cero hasta nivel avanzado.</p>
                 <div class="card-foot"><a href="capacitaciones.html" class="btn btn-outline">Ver cursos</a></div>
             </div>
             <div class="card">
-                <div class="icon">📈</div>
+                <div class="icon-box">📈</div>
                 <h3>Capacitación Excel</h3>
-                <p>Domina fórmulas, tablas dinámicas, Power Query y automatización para potenciar tu productividad.</p>
+                <p>Fórmulas, tablas dinámicas, Power Query y automatización para tu productividad.</p>
                 <div class="card-foot"><a href="capacitaciones.html" class="btn btn-outline">Ver cursos</a></div>
             </div>
             <div class="card">
-                <div class="icon">⚙️</div>
+                <div class="icon-box">⚙️</div>
                 <h3>Automatización</h3>
                 <p>Optimizamos procesos repetitivos con Power Automate, Apps Script y flujos a medida.</p>
-                <div class="card-foot"><a href="agendar.html" class="btn btn-outline">Agendar</a></div>
+                <div class="card-foot"><a href="agendar.html?tipo=automatizacion" class="btn btn-outline">Agendar</a></div>
             </div>
             <div class="card">
-                <div class="icon">🧠</div>
+                <div class="icon-box">🧠</div>
                 <h3>Proyectos de BI</h3>
-                <p>Diseñamos e implementamos soluciones de Business Intelligence end-to-end para tu organización.</p>
-                <div class="card-foot"><a href="agendar.html" class="btn btn-outline">Agendar</a></div>
+                <p>Diseñamos e implementamos soluciones de Business Intelligence end-to-end.</p>
+                <div class="card-foot"><a href="agendar.html?tipo=proyecto-bi" class="btn btn-outline">Agendar</a></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Cómo funciona -->
-<section class="section bg-alt">
+<!-- SPLIT: Power BI -->
+<section class="section">
+    <div class="container split">
+        <div class="split-media">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Analítica de datos y dashboards en pantalla" loading="lazy">
+        </div>
+        <div class="split-text">
+            <span class="eyebrow">Business Intelligence</span>
+            <h2>Dashboards que cuentan la historia de tu negocio</h2>
+            <p>Convertimos hojas de cálculo dispersas en tableros interactivos que tu equipo entiende de un vistazo.</p>
+            <ul class="feature-list">
+                <li><span class="fi">✔</span> Modelo de datos limpio y escalable</li>
+                <li><span class="fi">✔</span> KPIs y métricas con DAX</li>
+                <li><span class="fi">✔</span> Reportes que se actualizan solos</li>
+            </ul>
+            <a href="agendar.html?tipo=proyecto-bi" class="btn">Agendar reunión BI</a>
+        </div>
+    </div>
+</section>
+
+<!-- SPLIT: Automatización -->
+<section class="section">
+    <div class="container split reverse">
+        <div class="split-media">
+            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&q=80" alt="Automatización y flujos de trabajo" loading="lazy">
+        </div>
+        <div class="split-text">
+            <span class="eyebrow">Automatización</span>
+            <h2>Menos tareas manuales, más tiempo para decidir</h2>
+            <p>Eliminamos el trabajo repetitivo con flujos automáticos que conectan tus herramientas y envían reportes sin que muevas un dedo.</p>
+            <ul class="feature-list">
+                <li><span class="fi">✔</span> Reportes automáticos por correo</li>
+                <li><span class="fi">✔</span> Integración entre Excel, correo y bases de datos</li>
+                <li><span class="fi">✔</span> Flujos con Power Automate y Apps Script</li>
+            </ul>
+            <a href="agendar.html?tipo=automatizacion" class="btn">Automatizar mi proceso</a>
+        </div>
+    </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="section">
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">Fácil y rápido</span>
@@ -91,26 +156,28 @@
             <div class="step">
                 <div class="num">2</div>
                 <h3>Selecciona día y hora</h3>
-                <p>Verás horarios disponibles tomados de nuestro calendario real.</p>
+                <p>Ves horarios disponibles tomados de nuestro calendario real.</p>
             </div>
             <div class="step">
                 <div class="num">3</div>
                 <h3>Confirma</h3>
-                <p>Recibirás la invitación con el enlace de la reunión por correo.</p>
+                <p>Recibes la invitación con el enlace de la reunión por correo.</p>
             </div>
         </div>
-        <div style="text-align:center; margin-top:40px;">
+        <div style="text-align:center; margin-top:44px;">
             <a href="agendar.html" class="btn">Agendar ahora</a>
         </div>
     </div>
 </section>
 
-<!-- CTA donación -->
+<!-- CTA DONACIÓN -->
 <section class="cta-band">
     <div class="container">
-        <h2>Apoya nuestras capacitaciones</h2>
-        <p>Nuestras capacitaciones abiertas funcionan con aportes voluntarios. Si te aportaron valor, puedes donar el monto que desees.</p>
-        <a href="tienda.html" class="btn">Hacer una donación</a>
+        <div class="cta-inner">
+            <h2>Apoya nuestras capacitaciones 💛</h2>
+            <p>Nuestras capacitaciones abiertas funcionan con aportes voluntarios. Si te aportaron valor, dona el monto que desees.</p>
+            <a href="tienda.html" class="btn">Hacer una donación</a>
+        </div>
     </div>
 </section>
 
@@ -118,8 +185,8 @@
     <div class="container">
         <div class="footer-grid">
             <div>
-                <h4>Do<span class="accent">chiga</span> Soluciones</h4>
-                <p>Datos en decisiones estratégicas.</p>
+                <h4><span class="accent">Do</span>chiga Soluciones</h4>
+                <p>Transformamos datos en decisiones estratégicas con capacitación, automatización y Business Intelligence.</p>
             </div>
             <div>
                 <h4>Navegación</h4>
