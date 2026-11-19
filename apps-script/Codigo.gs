@@ -27,9 +27,9 @@ var CONFIG = {
   CALENDAR_ID:  "primary",          // "primary" = tu calendario principal
   TIMEZONE:     "America/Bogota",   // zona horaria de Colombia
   WORK_START:   8,                  // hora de inicio de atención (8 = 8:00 am)
-  WORK_END:     18,                 // hora de fin de atención (18 = 6:00 pm)
+  WORK_END:     14,                 // hora de fin de atención (14 = 2:00 pm)
   SLOT_MINUTES: 60,                 // duración de cada cita en minutos
-  WORK_DAYS:    [1, 2, 3, 4, 5],    // días hábiles (0=Dom ... 6=Sáb). Lun–Vie.
+  WORK_DAYS:    [1, 3, 5],          // días hábiles (0=Dom ... 6=Sáb). Lunes, Miércoles y Viernes.
   MIN_LEAD_HOURS: 2,                 // no permitir agendar con menos de X horas de anticipación
   ADMIN_EMAIL:  "dochigasoluciones@gmail.com"  // recibe copia/notificación
 };

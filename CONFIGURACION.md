@@ -13,9 +13,9 @@ El sitio es estático (GitHub Pages) y no puede leer tu calendario por sí solo.
 1. Entra a <https://script.google.com> → **Nuevo proyecto**.
 2. Borra el código de ejemplo y pega **todo** el contenido de `apps-script/Codigo.gs`.
 3. Revisa la sección `CONFIG` al inicio del archivo y ajusta si hace falta:
-   - `WORK_START` / `WORK_END` → horario de atención (por defecto 8:00–18:00).
+   - `WORK_START` / `WORK_END` → horario de atención (configurado: 8:00–14:00).
    - `SLOT_MINUTES` → duración de cada cita (por defecto 60 min).
-   - `WORK_DAYS` → días hábiles (por defecto Lun–Vie).
+   - `WORK_DAYS` → días hábiles (configurado: Lunes, Miércoles y Viernes → `[1, 3, 5]`).
    - `TIMEZONE` → `America/Bogota`.
 4. Menú **Implementar → Nueva implementación**.
    - Tipo: **Aplicación web**.
