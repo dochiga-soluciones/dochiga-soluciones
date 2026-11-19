@@ -7,7 +7,7 @@
    Mientras EPAYCO_TEST sea true, los pagos son de PRUEBA (no se cobra).
    Cuando quieras cobrar de verdad, pon EPAYCO_TEST = false.
 */
-const EPAYCO_PUBLIC_KEY = "PEGA_AQUI_TU_PUBLIC_KEY_EPAYCO";
+const EPAYCO_PUBLIC_KEY = "30a566319a8faf42b3c7728630533513";
 const EPAYCO_TEST = true; // true = modo prueba | false = pagos reales
 
 /* URL a la que ePayco responde (opcional). */
@@ -15,7 +15,7 @@ const EPAYCO_RESPONSE_URL = "https://dochiga-soluciones.github.io/dochiga-soluci
 
 /* ¿Está configurada la pasarela? */
 function epaycoConfigurado() {
-    return EPAYCO_PUBLIC_KEY && !EPAYCO_PUBLIC_KEY.startsWith("PEGA_AQUI");
+    return EPAYCO_PUBLIC_KEY && !EPAYCO_PUBLIC_KEY.startsWith("30a566319a8faf42b3c7728630533513");
 }
 
 /**
