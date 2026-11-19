@@ -41,11 +41,12 @@ La página **Tienda** permite donar un monto libre para las capacitaciones media
 
 1. Entra a tu panel de ePayco → **Configuración / Integraciones → Llaves**.
 2. Copia tu **PUBLIC_KEY** (la llave pública; es segura de exponer en el sitio).
-3. Ábrela en `js/donacion.js` y reemplaza:
+3. Ábrela en `js/epayco-config.js` y reemplaza:
    ```js
    const EPAYCO_PUBLIC_KEY = "PEGA_AQUI_TU_PUBLIC_KEY_EPAYCO";
    const EPAYCO_TEST = true; // déjalo en true para probar; ponlo en false para cobrar de verdad
    ```
+   > Esta misma llave activa tanto la donación de la página **Tienda** como el **pop-up de donación** que aparece al agendar una capacitación.
 4. Prueba una donación en modo `test`. Cuando todo funcione, cambia `EPAYCO_TEST` a `false`.
 
 > La `PRIVATE_KEY` **nunca** se pone en el sitio web. Solo se usa la pública aquí.

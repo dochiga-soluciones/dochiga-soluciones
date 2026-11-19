@@ -134,11 +134,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await res.json();
 
             if (data.ok) {
+                const esCapacitacion = /capacitaci/i.test(payload.tipo);
                 showAlert("✅ ¡Listo! Tu cita quedó agendada para el " + payload.fecha +
                     " a las " + payload.hora + ". Revisa tu correo (" + payload.email +
                     ") para ver la invitación.", "ok");
                 form.reset();
                 slotsBox.innerHTML = '<p class="form-note">Elige primero una fecha para ver los horarios.</p>';
+
+                // Si agendó una capacitación, invitamos a donar (opcional)
+                if (esCapacitacion) {
+                    abrirModalDonacion();
+                }
             } else {
                 showAlert("No se pudo agendar: " + (data.error || "intenta con otro horario."), "err");
             }
@@ -149,4 +155,59 @@ document.addEventListener("DOMContentLoaded", () => {
             submitBtn.textContent = "Confirmar agendamiento";
         }
     });
+
+    /* =================================================================
+       Pop-up de donación (solo tras agendar una capacitación)
+       ================================================================= */
+    const modal       = document.getElementById("donModal");
+    const modalClose  = document.getElementById("donModalClose");
+    const modalLater  = document.getElementById("donModalLater");
+    const modalBtn    = document.getElementById("donModalBtn");
+    const modalMonto  = document.getElementById("donMonto");
+    const modalAlert  = document.getElementById("donModalAlert");
+
+    function abrirModalDonacion() {
+        if (!modal) return;
+        // pequeño retraso para que se vea después del mensaje de éxito
+        setTimeout(() => {
+            modal.classList.add("open");
+            modal.setAttribute("aria-hidden", "false");
+        }, 600);
+    }
+
+    function cerrarModal() {
+        if (!modal) return;
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        if (modalAlert) modalAlert.className = "alert";
+        if (modalMonto) modalMonto.value = "";
+    }
+
+    if (modal) {
+        modalClose.addEventListener("click", cerrarModal);
+        modalLater.addEventListener("click", cerrarModal);
+        // cerrar al hacer clic fuera de la tarjeta
+        modal.addEventListener("click", (ev) => { if (ev.target === modal) cerrarModal(); });
+        // cerrar con Escape
+        document.addEventListener("keydown", (ev) => {
+            if (ev.key === "Escape" && modal.classList.contains("open")) cerrarModal();
+        });
+
+        // presets de monto
+        modal.querySelectorAll(".amount-presets button").forEach(b => {
+            b.addEventListener("click", () => { modalMonto.value = b.dataset.amount; });
+        });
+
+        // botón donar -> usa la función compartida de ePayco
+        modalBtn.addEventListener("click", () => {
+            const monto = parseInt(modalMonto.value, 10);
+            const error = (typeof abrirDonacionEpayco === "function")
+                ? abrirDonacionEpayco(monto)
+                : "La pasarela de donaciones no está disponible.";
+            if (error) {
+                modalAlert.textContent = error;
+                modalAlert.className = "alert " + (error.indexOf("no está configurada") !== -1 ? "info" : "err");
+            }
+        });
+    }
 });

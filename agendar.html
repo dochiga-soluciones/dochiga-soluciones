@@ -105,6 +105,32 @@
     </div>
 </section>
 
+<!-- Pop-up de donación (aparece al confirmar una capacitación) -->
+<div class="modal-overlay" id="donModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="donModalTitle">
+        <button class="modal-close" id="donModalClose" aria-label="Cerrar">&times;</button>
+        <div class="modal-emoji">💛</div>
+        <h3 id="donModalTitle">¡Tu capacitación quedó agendada!</h3>
+        <p class="modal-sub">Nuestras capacitaciones funcionan con <b>aportes voluntarios</b>. Si quieres apoyarnos, dona el monto que desees. Es totalmente opcional.</p>
+
+        <div class="amount-presets">
+            <button type="button" data-amount="20000">$20.000</button>
+            <button type="button" data-amount="50000">$50.000</button>
+            <button type="button" data-amount="100000">$100.000</button>
+        </div>
+
+        <div class="form-group" style="text-align:left;">
+            <label for="donMonto">Monto a donar (COP)</label>
+            <input type="number" id="donMonto" min="1000" step="1000" placeholder="Ej: 50000">
+        </div>
+
+        <div id="donModalAlert" class="alert"></div>
+
+        <button type="button" class="btn" id="donModalBtn" style="width:100%;">Donar con ePayco 💛</button>
+        <button type="button" class="modal-later" id="donModalLater">Quizás después</button>
+    </div>
+</div>
+
 <footer>
     <div class="container">
         <div class="footer-grid">
@@ -131,7 +157,9 @@
 </footer>
 
 <a href="https://wa.me/573186413008" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">💬</a>
+<script src="https://checkout.epayco.co/checkout.js"></script>
 <script src="js/animaciones.js"></script>
+<script src="js/epayco-config.js"></script>
 <script src="js/agenda.js"></script>
 </body>
 </html>
